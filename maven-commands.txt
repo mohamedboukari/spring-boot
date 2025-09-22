@@ -1,0 +1,28 @@
+# Maven Lifecycle Commands for a Spring Boot Project
+
+1. Clean – removes the target/ directory
+   mvn clean
+
+2. Validate – checks if the project is correct and all info is available
+   mvn validate
+
+3. Compile – compiles source code under src/main/java
+   mvn compile
+
+4. Test – runs tests under src/test/java
+   mvn test
+
+5. Package – compiles + tests + packages code into a JAR/WAR in target/
+   mvn package
+
+6. Verify – runs checks on results of integration tests to ensure quality
+   mvn verify
+
+7. Install – installs the packaged JAR/WAR into your local Maven repo (~/.m2/repository)
+   mvn install
+
+8. Site – generates project documentation (reports, site)
+   mvn site
+
+9. Deploy – copies the package to a remote repository (e.g., Nexus, Artifactory)
+   mvn deploy
