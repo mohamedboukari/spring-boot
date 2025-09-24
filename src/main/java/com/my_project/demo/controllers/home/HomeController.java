@@ -1,13 +1,13 @@
-package com.my_project.demo.controllers.hello;
+package com.my_project.demo.controllers.home;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HomeController {
 
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/")
+    public String home() {
         return "Hello, Spring Boot is working!";
     }
 
